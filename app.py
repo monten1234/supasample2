@@ -46,7 +46,10 @@ supabase: Client = create_client(url, key)
 st.title("Supabase Data Inserter")
 st.write("Upload a file to Supabase Table")
 name = st.text_input("Name")
-insert_data = {"name", name}
+insert_data = {
+    "id": 3, 
+    "name": name
+    }
 if st.button("Insert Data"):
     if name:
         data = supabase.table("countries").insert().execute()
