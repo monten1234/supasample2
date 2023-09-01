@@ -55,9 +55,9 @@ if st.button("Insert Data"):
     if name:
         data = supabase.table("demo1").insert(insert_data).execute()
     if data:
-        st.success("File uploaded successfully!")  
+        st.success("Data uploaded successfully!")  
     else:
-        st.error("File upload failed.")  
+        st.error("Data upload failed.")  
 
 
 
