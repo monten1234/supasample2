@@ -53,7 +53,6 @@ if st.button("Insert Data"):
         st.success("File uploaded successfully!")  
     else:
         st.error("File upload failed.")  
-if file:
-    st.write("File selected:", file.name)
+
 
 
