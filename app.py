@@ -52,7 +52,7 @@ insert_data = {
     }
 if st.button("Insert Data"):
     if name:
-        data = supabase.table("countries").insert().execute()
+        data = supabase.table("demo1").insert(insert_data).execute()
     if data:
         st.success("File uploaded successfully!")  
     else:
