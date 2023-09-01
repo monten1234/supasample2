@@ -45,9 +45,10 @@ supabase: Client = create_client(url, key)
 # Streamlitアプリの設定
 st.title("Supabase Data Inserter")
 st.write("Upload a file to Supabase Table")
+id = st.text_input("ID")
 name = st.text_input("Name")
 insert_data = {
-    "id": 3, 
+    "id": id, 
     "name": name
     }
 if st.button("Insert Data"):
